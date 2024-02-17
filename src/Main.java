@@ -53,5 +53,43 @@ public class Main {
         int y5 = whitePerClass * x5;
         int z5 = brownPerClass * x5;
         System.out.println("В школе, где " + x5 + " классов, нужно " + y5 + " банок белой краски и " + z5 + " банок коричневой краски");
+
+        // Задача 6
+        int oneBananaWeight = 80;
+        int aHundredMilk = 105;
+        int aBriketPlombir = 100;
+        int anEgg = 70;
+        int breakfastWeight = 5 * oneBananaWeight + 2 * aHundredMilk + 2 * aBriketPlombir + 4 * anEgg;
+        float breakfastWeightKilos = (float) breakfastWeight / 1000;
+        System.out.println("Вес завтрака в граммах: " + breakfastWeight);
+        System.out.println("Вес завтрака в килограммах: " + breakfastWeightKilos);
+
+        // Задача 7
+        int weight = 7;
+        int loseMin = 250;
+        int loseMax = 500;
+        int minDays = weight * 1000 / loseMax;
+        int maxDays = weight * 1000 / loseMin;
+        int averageDays = (minDays + maxDays) / 2;
+        System.out.println("Минимальное количество дней потери веса: " + minDays);
+        System.out.println("Максимальное количество дней потери веса: " + maxDays);
+        System.out.println("Среднее количество дней потери веса: " + averageDays);
+
+        // Задача 8
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKrist = 76230;
+        int newSalaryMasha = salaryMasha + (int)(salaryMasha * 0.1);
+        int newSalaryDenis = salaryDenis + (int)(salaryDenis * 0.1);
+        int newSalaryKrist = salaryKrist + (int)(salaryKrist * 0.1);
+        int diffMasha = newSalaryMasha - salaryMasha;
+        int diffDenis = newSalaryDenis - salaryDenis;
+        int diffKrist = newSalaryKrist - salaryKrist;
+        System.out.println("Маша теперь получает " + newSalaryMasha +
+                " рублей. Годовой доход вырос на " + diffMasha + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis +
+                " рублей. Годовой доход вырос на " + diffDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKrist +
+                " рублей. Годовой доход вырос на " + diffKrist + " рублей");
     }
 }
